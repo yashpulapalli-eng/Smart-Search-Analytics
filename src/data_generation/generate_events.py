@@ -93,7 +93,7 @@ def legacy_search(query, products, max_results=10):
     return result_df
 
 
-def simulate_user_search(user_id, variant, products, index, model, day_offset, session_id):
+def simulate_user_search(user_id, variant, products, index, model, day_offset, session_id, search_idx):
     query = generate_query(products)
     t0 = START_DATE + timedelta(days=day_offset, hours=random.randint(7, 22), minutes=random.randint(0, 59))
 
@@ -108,8 +108,10 @@ def simulate_user_search(user_id, variant, products, index, model, day_offset, s
     result_count = len(results)
     top_sim = results["similarity_score"].max() if result_count > 0 else 0.0
 
+    event_key = f"{user_id}_{day_offset}_{session_id}_{search_idx}"
+
     search_event = {
-        "event_id": f"S{user_id}_{day_offset}_{session_id}",
+        "event_id": f"S{event_key}",
         "user_id": user_id,
         "session_id": session_id,
         "timestamp": t0,
@@ -134,7 +136,7 @@ def simulate_user_search(user_id, variant, products, index, model, day_offset, s
 
         click_time = t0 + timedelta(seconds=random.randint(3, 25))
         events["click"] = {
-            "event_id": f"C{user_id}_{day_offset}_{session_id}",
+            "event_id": f"C{event_key}",
             "user_id": user_id,
             "session_id": session_id,
             "timestamp": click_time,
@@ -148,7 +150,7 @@ def simulate_user_search(user_id, variant, products, index, model, day_offset, s
         if random.random() < cart_prob:
             cart_time = click_time + timedelta(seconds=random.randint(5, 40))
             events["cart"] = {
-                "event_id": f"A{user_id}_{day_offset}_{session_id}",
+                "event_id": f"A{event_key}",
                 "user_id": user_id,
                 "session_id": session_id,
                 "timestamp": cart_time,
@@ -161,11 +163,11 @@ def simulate_user_search(user_id, variant, products, index, model, day_offset, s
             if random.random() < purchase_prob:
                 purchase_time = cart_time + timedelta(minutes=random.randint(1, 20))
                 events["purchase"] = {
-                    "event_id": f"P{user_id}_{day_offset}_{session_id}",
+                    "event_id": f"P{event_key}",
                     "user_id": user_id,
                     "session_id": session_id,
                     "timestamp": purchase_time,
-                    "order_id": f"O{user_id}_{day_offset}_{session_id}",
+                    "order_id": f"O{event_key}",
                     "product_ids": clicked_row["product_id"],
                     "revenue": float(clicked_row["price"]),
                     "search_event_id": search_event["event_id"],
@@ -215,8 +217,8 @@ def generate_dataset():
                 })
 
                 n_searches = np.random.choice([1, 2, 3], p=[0.6, 0.3, 0.1])
-                for _ in range(n_searches):
-                    result = simulate_user_search(uid, variant, products, index, model, day, session_id)
+                for search_idx in range(n_searches):
+                    result = simulate_user_search(uid, variant, products, index, model, day, session_id, search_idx)
                     searches.append(result["search"])
                     if result["click"]:
                         clicks.append(result["click"])
