@@ -1,0 +1,256 @@
+product_id,title,description,category,price
+P0001,Handmade Mug,"A handmade mug built to last, loved by thousands of customers.",Gifts & Novelty,38.71
+P0002,Compact Sleeping Bag,Compact Sleeping Bag designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,333.49
+P0003,Minimalist Keychain,Minimalist Keychain designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,68.02
+P0004,Portable Headphones,Portable Headphones designed for everyday use. Durable construction and reliable performance.,Electronics,185.62
+P0005,Breathable Hiking Boots,"This breathable hiking boots combines comfort, style, and function.",Footwear,49.18
+P0006,Wireless Earbuds,Our best-selling wireless earbuds — perfect for gifts or personal use.,Electronics,59.46
+P0007,Minimalist Desk Ornament,"This minimalist desk ornament combines comfort, style, and function.",Gifts & Novelty,12.76
+P0008,Warm Fleece Pullover,"This warm fleece pullover combines comfort, style, and function.",Apparel,131.53
+P0009,Non-Stick Toaster,Our best-selling non-stick toaster — perfect for gifts or personal use.,Home & Kitchen,136.23
+P0010,Rustic Photo Frame,"A rustic photo frame built to last, loved by thousands of customers.",Gifts & Novelty,66.06
+P0011,Compact Headlamp,"A compact headlamp built to last, loved by thousands of customers.",Outdoor & Camping,21.9
+P0012,Lightweight Sandals,Lightweight Sandals designed for everyday use. Durable construction and reliable performance.,Footwear,175.34
+P0013,Electric Knife Set,"A electric knife set built to last, loved by thousands of customers.",Home & Kitchen,184.81
+P0014,Trail Loafers,Trail Loafers designed for everyday use. Durable construction and reliable performance.,Footwear,57.91
+P0015,Cozy Rain Coat,"A cozy rain coat built to last, loved by thousands of customers.",Apparel,37.09
+P0016,Elegant Gift Box Set,"A elegant gift box set built to last, loved by thousands of customers.",Gifts & Novelty,23.04
+P0017,Noise-Cancelling Smartwatch,Noise-Cancelling Smartwatch designed for everyday use. Durable construction and reliable performance.,Electronics,101.71
+P0018,Breathable Cleats,"A breathable cleats built to last, loved by thousands of customers.",Footwear,106.34
+P0020,Moisture-Wicking Fleece Pullover,"A moisture-wicking fleece pullover built to last, loved by thousands of customers.",Apparel,52.19
+P0021,Heavy-Duty Backpack,Our best-selling heavy-duty backpack — perfect for gifts or personal use.,Outdoor & Camping,219.97
+P0022,Engraved Desk Ornament,Engraved Desk Ornament designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,19.44
+P0023,Compact Speaker,"This compact speaker combines comfort, style, and function.",Electronics,98.26
+P0024,Personalized Candle,"Upgrade your routine with this personalized candle, made from quality materials.",Gifts & Novelty,38.04
+P0025,Moisture-Wicking Thermal Leggings,"This moisture-wicking thermal leggings combines comfort, style, and function.",Apparel,74.94
+P0026,Insulated Backpack,Insulated Backpack designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,278.03
+P0027,Foldable Tent,"A foldable tent built to last, loved by thousands of customers.",Outdoor & Camping,81.89
+P0028,Moisture-Wicking Jacket,Our best-selling moisture-wicking jacket — perfect for gifts or personal use.,Apparel,82.96
+P0029,Compact Power Bank,Our best-selling compact power bank — perfect for gifts or personal use.,Electronics,183.84
+P0030,Rustic Journal,"Upgrade your routine with this rustic journal, made from quality materials.",Gifts & Novelty,11.81
+P0031,Heavy-Duty Sleeping Bag,Our best-selling heavy-duty sleeping bag — perfect for gifts or personal use.,Outdoor & Camping,218.53
+P0032,Elegant Keychain,"A elegant keychain built to last, loved by thousands of customers.",Gifts & Novelty,21.98
+P0033,Elegant Journal,"This elegant journal combines comfort, style, and function.",Gifts & Novelty,13.33
+P0034,Moisture-Wicking Hoodie,Our best-selling moisture-wicking hoodie — perfect for gifts or personal use.,Apparel,142.95
+P0036,Cushioned Winter Boots,Our best-selling cushioned winter boots — perfect for gifts or personal use.,Footwear,150.3
+P0037,Rustic Keychain,Rustic Keychain designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,32.98
+P0038,Fleece-Lined Rain Coat,"Upgrade your routine with this fleece-lined rain coat, made from quality materials.",Apparel,25.48
+P0039,Rechargeable Earbuds,Rechargeable Earbuds designed for everyday use. Durable construction and reliable performance.,Electronics,210.01
+P0040,Minimalist Mug,"This minimalist mug combines comfort, style, and function.",Gifts & Novelty,44.09
+P0041,Dishwasher-Safe Air Fryer,Dishwasher-Safe Air Fryer designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,35.63
+P0042,Compact Cookware Set,"Upgrade your routine with this compact cookware set, made from quality materials.",Home & Kitchen,113.99
+P0043,Insulated Loafers,Our best-selling insulated loafers — perfect for gifts or personal use.,Footwear,30.33
+P0044,Wireless Webcam,"A wireless webcam built to last, loved by thousands of customers.",Electronics,274.16
+P0046,Heavy-Duty Headlamp,Our best-selling heavy-duty headlamp — perfect for gifts or personal use.,Outdoor & Camping,236.94
+P0047,Bluetooth Headphones,"This bluetooth headphones combines comfort, style, and function.",Electronics,103.84
+P0048,Compact Blender,Compact Blender designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,119.21
+P0049,Electric Cookware Set,Electric Cookware Set designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,124.81
+P0050,Ultralight Tent,Ultralight Tent designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,76.93
+P0051,Rustic Gift Box Set,Rustic Gift Box Set designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,87.51
+P0052,Noise-Cancelling Speaker,"Upgrade your routine with this noise-cancelling speaker, made from quality materials.",Electronics,235.91
+P0053,Noise-Cancelling Power Bank,"This noise-cancelling power bank combines comfort, style, and function.",Electronics,282.76
+P0054,Portable Speaker,"This portable speaker combines comfort, style, and function.",Electronics,270.03
+P0055,Minimalist Candle,"A minimalist candle built to last, loved by thousands of customers.",Gifts & Novelty,57.03
+P0056,Lightweight Thermal Leggings,"A lightweight thermal leggings built to last, loved by thousands of customers.",Apparel,139.22
+P0057,Windproof Fleece Pullover,Windproof Fleece Pullover designed for everyday use. Durable construction and reliable performance.,Apparel,24.21
+P0058,Compact Tent,"A compact tent built to last, loved by thousands of customers.",Outdoor & Camping,80.65
+P0059,Breathable Loafers,Our best-selling breathable loafers — perfect for gifts or personal use.,Footwear,32.01
+P0060,Lightweight Winter Boots,Lightweight Winter Boots designed for everyday use. Durable construction and reliable performance.,Footwear,75.43
+P0061,Portable Tent,"A portable tent built to last, loved by thousands of customers.",Outdoor & Camping,145.21
+P0062,Breathable Sneakers,"Upgrade your routine with this breathable sneakers, made from quality materials.",Footwear,67.06
+P0063,Ultralight Sleeping Bag,"This ultralight sleeping bag combines comfort, style, and function.",Outdoor & Camping,292.63
+P0065,Warm Jacket,Warm Jacket designed for everyday use. Durable construction and reliable performance.,Apparel,50.77
+P0067,Fleece-Lined Beanie,Fleece-Lined Beanie designed for everyday use. Durable construction and reliable performance.,Apparel,31.45
+P0069,High-top Winter Boots,"A high-top winter boots built to last, loved by thousands of customers.",Footwear,36.56
+P0072,Heavy-Duty Camp Stove,Our best-selling heavy-duty camp stove — perfect for gifts or personal use.,Outdoor & Camping,81.57
+P0073,Trail Cleats,"This trail cleats combines comfort, style, and function.",Footwear,25.86
+P0074,Waterproof Winter Boots,"This waterproof winter boots combines comfort, style, and function.",Footwear,151.4
+P0075,Lightweight Cleats,Our best-selling lightweight cleats — perfect for gifts or personal use.,Footwear,134.56
+P0076,Weatherproof Camp Stove,"Upgrade your routine with this weatherproof camp stove, made from quality materials.",Outdoor & Camping,259.22
+P0077,Foldable Camp Stove,Foldable Camp Stove designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,273.38
+P0078,Weatherproof Tent,"Upgrade your routine with this weatherproof tent, made from quality materials.",Outdoor & Camping,39.8
+P0079,Compact Air Fryer,"Upgrade your routine with this compact air fryer, made from quality materials.",Home & Kitchen,85.28
+P0080,Minimalist Gift Box Set,"This minimalist gift box set combines comfort, style, and function.",Gifts & Novelty,17.5
+P0081,Minimalist Journal,Our best-selling minimalist journal — perfect for gifts or personal use.,Gifts & Novelty,78.77
+P0083,Compact Earbuds,Compact Earbuds designed for everyday use. Durable construction and reliable performance.,Electronics,109.31
+P0084,Engraved Mug,Engraved Mug designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,13.21
+P0085,Portable Earbuds,"This portable earbuds combines comfort, style, and function.",Electronics,103.63
+P0086,Portable Cooler,Portable Cooler designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,123.94
+P0088,Personalized Journal,Personalized Journal designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,60.28
+P0089,Noise-Cancelling Earbuds,"This noise-cancelling earbuds combines comfort, style, and function.",Electronics,267.86
+P0091,Bluetooth Power Bank,"A bluetooth power bank built to last, loved by thousands of customers.",Electronics,49.08
+P0092,Insulated Hammock,"A insulated hammock built to last, loved by thousands of customers.",Outdoor & Camping,253.94
+P0094,Minimalist Photo Frame,"Upgrade your routine with this minimalist photo frame, made from quality materials.",Gifts & Novelty,54.02
+P0095,Non-Stick Blender,"Upgrade your routine with this non-stick blender, made from quality materials.",Home & Kitchen,171.9
+P0098,Heavy-Duty Tent,Our best-selling heavy-duty tent — perfect for gifts or personal use.,Outdoor & Camping,158.23
+P0101,Elegant Mug,"This elegant mug combines comfort, style, and function.",Gifts & Novelty,10.58
+P0102,Dishwasher-Safe Blender,Our best-selling dishwasher-safe blender — perfect for gifts or personal use.,Home & Kitchen,143.65
+P0107,Portable Power Bank,Portable Power Bank designed for everyday use. Durable construction and reliable performance.,Electronics,131.96
+P0108,High-top Cleats,"A high-top cleats built to last, loved by thousands of customers.",Footwear,142.11
+P0109,Waterproof Sneakers,Our best-selling waterproof sneakers — perfect for gifts or personal use.,Footwear,60.46
+P0110,Engraved Candle,"Upgrade your routine with this engraved candle, made from quality materials.",Gifts & Novelty,14.31
+P0111,Compact Charging Cable,"This compact charging cable combines comfort, style, and function.",Electronics,97.58
+P0112,Lightweight Running Shoes,Our best-selling lightweight running shoes — perfect for gifts or personal use.,Footwear,49.99
+P0114,Bluetooth Speaker,"Upgrade your routine with this bluetooth speaker, made from quality materials.",Electronics,245.31
+P0115,Portable Backpack,"A portable backpack built to last, loved by thousands of customers.",Outdoor & Camping,227.19
+P0116,Slip-on Hiking Boots,Our best-selling slip-on hiking boots — perfect for gifts or personal use.,Footwear,160.08
+P0117,Handmade Photo Frame,"This handmade photo frame combines comfort, style, and function.",Gifts & Novelty,73.9
+P0118,Windproof Thermal Leggings,Our best-selling windproof thermal leggings — perfect for gifts or personal use.,Apparel,37.75
+P0119,Foldable Sleeping Bag,Our best-selling foldable sleeping bag — perfect for gifts or personal use.,Outdoor & Camping,314.01
+P0120,Cozy Hoodie,"A cozy hoodie built to last, loved by thousands of customers.",Apparel,86.43
+P0121,Soft Thermal Leggings,Our best-selling soft thermal leggings — perfect for gifts or personal use.,Apparel,123.43
+P0122,Stainless Steel Toaster,Stainless Steel Toaster designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,198.18
+P0123,Soft Jacket,"Upgrade your routine with this soft jacket, made from quality materials.",Apparel,55.88
+P0125,Electric Toaster,Our best-selling electric toaster — perfect for gifts or personal use.,Home & Kitchen,57.87
+P0126,Portable Hammock,Our best-selling portable hammock — perfect for gifts or personal use.,Outdoor & Camping,158.08
+P0127,Moisture-Wicking Sweater,Moisture-Wicking Sweater designed for everyday use. Durable construction and reliable performance.,Apparel,124.89
+P0128,Electric Mixing Bowl,"This electric mixing bowl combines comfort, style, and function.",Home & Kitchen,190.75
+P0129,Lightweight Beanie,"This lightweight beanie combines comfort, style, and function.",Apparel,12.96
+P0131,Ultralight Backpack,Ultralight Backpack designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,154.83
+P0132,High-top Sneakers,"A high-top sneakers built to last, loved by thousands of customers.",Footwear,59.43
+P0133,Windproof Rain Coat,Windproof Rain Coat designed for everyday use. Durable construction and reliable performance.,Apparel,28.54
+P0134,Windproof Hoodie,"A windproof hoodie built to last, loved by thousands of customers.",Apparel,58.59
+P0135,High-top Running Shoes,"This high-top running shoes combines comfort, style, and function.",Footwear,171.15
+P0136,Compact Smartwatch,Our best-selling compact smartwatch — perfect for gifts or personal use.,Electronics,107.11
+P0138,Rechargeable Smartwatch,Rechargeable Smartwatch designed for everyday use. Durable construction and reliable performance.,Electronics,215.36
+P0139,Engraved Keychain,"A engraved keychain built to last, loved by thousands of customers.",Gifts & Novelty,37.82
+P0142,Weatherproof Hammock,"Upgrade your routine with this weatherproof hammock, made from quality materials.",Outdoor & Camping,99.35
+P0144,Rechargeable Charging Cable,"This rechargeable charging cable combines comfort, style, and function.",Electronics,100.75
+P0145,Insulated Sneakers,Our best-selling insulated sneakers — perfect for gifts or personal use.,Footwear,69.15
+P0146,Soft Rain Coat,"This soft rain coat combines comfort, style, and function.",Apparel,17.09
+P0147,Engraved Journal,"Upgrade your routine with this engraved journal, made from quality materials.",Gifts & Novelty,57.98
+P0148,Lightweight Hoodie,"This lightweight hoodie combines comfort, style, and function.",Apparel,81.37
+P0149,Soft Beanie,Our best-selling soft beanie — perfect for gifts or personal use.,Apparel,19.1
+P0152,Breathable Winter Boots,"A breathable winter boots built to last, loved by thousands of customers.",Footwear,62.13
+P0154,Waterproof Hiking Boots,"Upgrade your routine with this waterproof hiking boots, made from quality materials.",Footwear,100.87
+P0155,Wireless Charging Cable,"Upgrade your routine with this wireless charging cable, made from quality materials.",Electronics,295.91
+P0156,Elegant Candle,"Upgrade your routine with this elegant candle, made from quality materials.",Gifts & Novelty,27.85
+P0157,Fleece-Lined Hoodie,Our best-selling fleece-lined hoodie — perfect for gifts or personal use.,Apparel,104.75
+P0159,Warm Hoodie,"This warm hoodie combines comfort, style, and function.",Apparel,44.79
+P0161,Trail Hiking Boots,"Upgrade your routine with this trail hiking boots, made from quality materials.",Footwear,82.01
+P0163,Compact Knife Set,"This compact knife set combines comfort, style, and function.",Home & Kitchen,143.04
+P0165,Insulated Headlamp,"Upgrade your routine with this insulated headlamp, made from quality materials.",Outdoor & Camping,45.25
+P0166,Moisture-Wicking Beanie,Our best-selling moisture-wicking beanie — perfect for gifts or personal use.,Apparel,127.27
+P0167,Engraved Gift Box Set,"This engraved gift box set combines comfort, style, and function.",Gifts & Novelty,34.3
+P0169,Cozy Thermal Leggings,"A cozy thermal leggings built to last, loved by thousands of customers.",Apparel,17.63
+P0171,Wireless Speaker,Our best-selling wireless speaker — perfect for gifts or personal use.,Electronics,208.11
+P0173,Personalized Mug,"Upgrade your routine with this personalized mug, made from quality materials.",Gifts & Novelty,49.99
+P0174,Moisture-Wicking Rain Coat,"Upgrade your routine with this moisture-wicking rain coat, made from quality materials.",Apparel,43.26
+P0177,Portable Charging Cable,Portable Charging Cable designed for everyday use. Durable construction and reliable performance.,Electronics,211.92
+P0180,Noise-Cancelling Charging Cable,Our best-selling noise-cancelling charging cable — perfect for gifts or personal use.,Electronics,54.19
+P0181,Compact Coffee Maker,Compact Coffee Maker designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,81.62
+P0183,Personalized Gift Box Set,"Upgrade your routine with this personalized gift box set, made from quality materials.",Gifts & Novelty,83.82
+P0184,Ultralight Cooler,Ultralight Cooler designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,308.91
+P0186,High-top Hiking Boots,"Upgrade your routine with this high-top hiking boots, made from quality materials.",Footwear,127.3
+P0188,Stainless Steel Coffee Maker,"A stainless steel coffee maker built to last, loved by thousands of customers.",Home & Kitchen,126.59
+P0190,Non-Stick Coffee Maker,Non-Stick Coffee Maker designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,60.79
+P0192,Insulated Tent,Insulated Tent designed for everyday use. Durable construction and reliable performance.,Outdoor & Camping,315.57
+P0195,Lightweight Jacket,"This lightweight jacket combines comfort, style, and function.",Apparel,58.79
+P0197,Stainless Steel Knife Set,"This stainless steel knife set combines comfort, style, and function.",Home & Kitchen,162.45
+P0199,Non-Stick Knife Set,Non-Stick Knife Set designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,196.29
+P0200,Ceramic Mixing Bowl,"Upgrade your routine with this ceramic mixing bowl, made from quality materials.",Home & Kitchen,173.77
+P0202,Compact Webcam,Our best-selling compact webcam — perfect for gifts or personal use.,Electronics,38.98
+P0203,Insulated Cleats,"This insulated cleats combines comfort, style, and function.",Footwear,50.05
+P0205,Lightweight Sweater,Lightweight Sweater designed for everyday use. Durable construction and reliable performance.,Apparel,95.69
+P0207,Soft Fleece Pullover,Soft Fleece Pullover designed for everyday use. Durable construction and reliable performance.,Apparel,26.0
+P0210,Elegant Desk Ornament,"A elegant desk ornament built to last, loved by thousands of customers.",Gifts & Novelty,21.19
+P0211,Bluetooth Webcam,"Upgrade your routine with this bluetooth webcam, made from quality materials.",Electronics,171.39
+P0214,Insulated Sandals,Our best-selling insulated sandals — perfect for gifts or personal use.,Footwear,59.76
+P0217,Weatherproof Sleeping Bag,"A weatherproof sleeping bag built to last, loved by thousands of customers.",Outdoor & Camping,124.01
+P0218,Electric Air Fryer,"This electric air fryer combines comfort, style, and function.",Home & Kitchen,166.76
+P0220,Noise-Cancelling Headphones,Our best-selling noise-cancelling headphones — perfect for gifts or personal use.,Electronics,257.03
+P0222,Insulated Camp Stove,"Upgrade your routine with this insulated camp stove, made from quality materials.",Outdoor & Camping,205.38
+P0225,Dishwasher-Safe Knife Set,"A dishwasher-safe knife set built to last, loved by thousands of customers.",Home & Kitchen,65.69
+P0227,Lightweight Rain Coat,"A lightweight rain coat built to last, loved by thousands of customers.",Apparel,146.28
+P0228,Dishwasher-Safe Coffee Maker,"A dishwasher-safe coffee maker built to last, loved by thousands of customers.",Home & Kitchen,92.55
+P0230,Personalized Photo Frame,Personalized Photo Frame designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,59.75
+P0232,Compact Hammock,"Upgrade your routine with this compact hammock, made from quality materials.",Outdoor & Camping,183.38
+P0234,Rechargeable Headphones,Our best-selling rechargeable headphones — perfect for gifts or personal use.,Electronics,155.37
+P0235,Stainless Steel Air Fryer,Our best-selling stainless steel air fryer — perfect for gifts or personal use.,Home & Kitchen,51.0
+P0236,Non-Stick Mixing Bowl,"This non-stick mixing bowl combines comfort, style, and function.",Home & Kitchen,161.71
+P0239,Rustic Mug,Rustic Mug designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,60.93
+P0243,Fleece-Lined Jacket,"This fleece-lined jacket combines comfort, style, and function.",Apparel,138.25
+P0245,Foldable Cooler,"A foldable cooler built to last, loved by thousands of customers.",Outdoor & Camping,20.18
+P0246,Breathable Running Shoes,"This breathable running shoes combines comfort, style, and function.",Footwear,168.89
+P0249,Fleece-Lined Sweater,"This fleece-lined sweater combines comfort, style, and function.",Apparel,144.98
+P0254,Cushioned Running Shoes,"Upgrade your routine with this cushioned running shoes, made from quality materials.",Footwear,74.12
+P0256,Non-Stick Cookware Set,"A non-stick cookware set built to last, loved by thousands of customers.",Home & Kitchen,126.93
+P0261,Stainless Steel Blender,Stainless Steel Blender designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,139.15
+P0262,Foldable Backpack,"This foldable backpack combines comfort, style, and function.",Outdoor & Camping,346.67
+P0263,Elegant Photo Frame,"Upgrade your routine with this elegant photo frame, made from quality materials.",Gifts & Novelty,19.49
+P0264,Trail Winter Boots,"A trail winter boots built to last, loved by thousands of customers.",Footwear,105.34
+P0276,Handmade Gift Box Set,Our best-selling handmade gift box set — perfect for gifts or personal use.,Gifts & Novelty,49.12
+P0277,Compact Mixing Bowl,"Upgrade your routine with this compact mixing bowl, made from quality materials.",Home & Kitchen,177.64
+P0279,Trail Running Shoes,"A trail running shoes built to last, loved by thousands of customers.",Footwear,133.8
+P0280,Electric Blender,"Upgrade your routine with this electric blender, made from quality materials.",Home & Kitchen,177.12
+P0281,Wireless Smartwatch,"This wireless smartwatch combines comfort, style, and function.",Electronics,268.65
+P0285,Heavy-Duty Cooler,Our best-selling heavy-duty cooler — perfect for gifts or personal use.,Outdoor & Camping,208.72
+P0288,Insulated Sleeping Bag,"A insulated sleeping bag built to last, loved by thousands of customers.",Outdoor & Camping,196.79
+P0298,Non-Stick Air Fryer,"A non-stick air fryer built to last, loved by thousands of customers.",Home & Kitchen,55.32
+P0299,Bluetooth Smartwatch,"Upgrade your routine with this bluetooth smartwatch, made from quality materials.",Electronics,192.52
+P0300,Weatherproof Cooler,"Upgrade your routine with this weatherproof cooler, made from quality materials.",Outdoor & Camping,43.59
+P0303,Personalized Keychain,"Upgrade your routine with this personalized keychain, made from quality materials.",Gifts & Novelty,52.33
+P0304,Foldable Headlamp,"Upgrade your routine with this foldable headlamp, made from quality materials.",Outdoor & Camping,228.54
+P0305,Slip-on Winter Boots,"Upgrade your routine with this slip-on winter boots, made from quality materials.",Footwear,137.54
+P0308,Rechargeable Webcam,Rechargeable Webcam designed for everyday use. Durable construction and reliable performance.,Electronics,107.04
+P0310,Cushioned Sandals,Our best-selling cushioned sandals — perfect for gifts or personal use.,Footwear,66.98
+P0330,Trail Sneakers,"This trail sneakers combines comfort, style, and function.",Footwear,63.4
+P0332,Soft Sweater,Our best-selling soft sweater — perfect for gifts or personal use.,Apparel,116.58
+P0339,Ultralight Headlamp,"A ultralight headlamp built to last, loved by thousands of customers.",Outdoor & Camping,173.85
+P0341,Dishwasher-Safe Toaster,Our best-selling dishwasher-safe toaster — perfect for gifts or personal use.,Home & Kitchen,113.24
+P0342,Handmade Desk Ornament,Handmade Desk Ornament designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,46.82
+P0344,Dishwasher-Safe Cookware Set,Dishwasher-Safe Cookware Set designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,101.11
+P0347,Ceramic Knife Set,"A ceramic knife set built to last, loved by thousands of customers.",Home & Kitchen,143.37
+P0351,Foldable Hammock,"Upgrade your routine with this foldable hammock, made from quality materials.",Outdoor & Camping,183.55
+P0355,Portable Webcam,"A portable webcam built to last, loved by thousands of customers.",Electronics,35.11
+P0356,Breathable Sandals,Breathable Sandals designed for everyday use. Durable construction and reliable performance.,Footwear,124.57
+P0368,Warm Beanie,"A warm beanie built to last, loved by thousands of customers.",Apparel,136.94
+P0369,Slip-on Loafers,"A slip-on loafers built to last, loved by thousands of customers.",Footwear,55.35
+P0381,Cushioned Sneakers,Cushioned Sneakers designed for everyday use. Durable construction and reliable performance.,Footwear,43.32
+P0390,Ceramic Cookware Set,Ceramic Cookware Set designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,179.44
+P0394,Bluetooth Charging Cable,Bluetooth Charging Cable designed for everyday use. Durable construction and reliable performance.,Electronics,236.28
+P0397,Weatherproof Backpack,"Upgrade your routine with this weatherproof backpack, made from quality materials.",Outdoor & Camping,302.57
+P0398,Fleece-Lined Thermal Leggings,Fleece-Lined Thermal Leggings designed for everyday use. Durable construction and reliable performance.,Apparel,71.2
+P0400,Stainless Steel Mixing Bowl,"Upgrade your routine with this stainless steel mixing bowl, made from quality materials.",Home & Kitchen,168.45
+P0411,Noise-Cancelling Webcam,"Upgrade your routine with this noise-cancelling webcam, made from quality materials.",Electronics,106.0
+P0412,Bluetooth Earbuds,"This bluetooth earbuds combines comfort, style, and function.",Electronics,285.77
+P0413,Insulated Running Shoes,Our best-selling insulated running shoes — perfect for gifts or personal use.,Footwear,172.34
+P0416,Ultralight Hammock,"Upgrade your routine with this ultralight hammock, made from quality materials.",Outdoor & Camping,165.23
+P0421,Wireless Headphones,Our best-selling wireless headphones — perfect for gifts or personal use.,Electronics,240.6
+P0426,Wireless Power Bank,"Upgrade your routine with this wireless power bank, made from quality materials.",Electronics,171.62
+P0427,Insulated Winter Boots,"This insulated winter boots combines comfort, style, and function.",Footwear,93.44
+P0433,Lightweight Fleece Pullover,Our best-selling lightweight fleece pullover — perfect for gifts or personal use.,Apparel,97.31
+P0437,Cozy Fleece Pullover,Cozy Fleece Pullover designed for everyday use. Durable construction and reliable performance.,Apparel,22.04
+P0438,Ceramic Coffee Maker,"This ceramic coffee maker combines comfort, style, and function.",Home & Kitchen,182.59
+P0450,Portable Sleeping Bag,"A portable sleeping bag built to last, loved by thousands of customers.",Outdoor & Camping,42.97
+P0451,Compact Cooler,Our best-selling compact cooler — perfect for gifts or personal use.,Outdoor & Camping,275.34
+P0452,Handmade Candle,"Upgrade your routine with this handmade candle, made from quality materials.",Gifts & Novelty,53.79
+P0461,Lightweight Loafers,"This lightweight loafers combines comfort, style, and function.",Footwear,43.22
+P0463,Compact Headphones,"Upgrade your routine with this compact headphones, made from quality materials.",Electronics,227.62
+P0467,Handmade Keychain,Our best-selling handmade keychain — perfect for gifts or personal use.,Gifts & Novelty,31.43
+P0473,Slip-on Running Shoes,"This slip-on running shoes combines comfort, style, and function.",Footwear,31.69
+P0481,High-top Loafers,"A high-top loafers built to last, loved by thousands of customers.",Footwear,122.56
+P0482,Slip-on Sneakers,Our best-selling slip-on sneakers — perfect for gifts or personal use.,Footwear,132.84
+P0487,Slip-on Cleats,"This slip-on cleats combines comfort, style, and function.",Footwear,32.04
+P0488,Ultralight Camp Stove,Our best-selling ultralight camp stove — perfect for gifts or personal use.,Outdoor & Camping,109.12
+P0492,Windproof Sweater,"Upgrade your routine with this windproof sweater, made from quality materials.",Apparel,97.58
+P0494,Soft Hoodie,"A soft hoodie built to last, loved by thousands of customers.",Apparel,37.96
+P0506,Cozy Sweater,Our best-selling cozy sweater — perfect for gifts or personal use.,Apparel,34.44
+P0514,Insulated Hiking Boots,"A insulated hiking boots built to last, loved by thousands of customers.",Footwear,159.24
+P0531,Rustic Desk Ornament,Our best-selling rustic desk ornament — perfect for gifts or personal use.,Gifts & Novelty,74.66
+P0538,Engraved Photo Frame,Engraved Photo Frame designed for everyday use. Durable construction and reliable performance.,Gifts & Novelty,28.28
+P0544,Rechargeable Power Bank,Rechargeable Power Bank designed for everyday use. Durable construction and reliable performance.,Electronics,206.43
+P0563,Rustic Candle,"This rustic candle combines comfort, style, and function.",Gifts & Novelty,19.18
+P0565,Cushioned Cleats,Cushioned Cleats designed for everyday use. Durable construction and reliable performance.,Footwear,79.34
+P0566,Warm Thermal Leggings,"Upgrade your routine with this warm thermal leggings, made from quality materials.",Apparel,93.41
+P0579,Handmade Journal,"Upgrade your routine with this handmade journal, made from quality materials.",Gifts & Novelty,48.35
+P0584,Heavy-Duty Hammock,Our best-selling heavy-duty hammock — perfect for gifts or personal use.,Outdoor & Camping,125.13
+P0585,Ceramic Air Fryer,Ceramic Air Fryer designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,143.01
+P0592,Waterproof Running Shoes,Waterproof Running Shoes designed for everyday use. Durable construction and reliable performance.,Footwear,124.34
+P0599,Fleece-Lined Fleece Pullover,Our best-selling fleece-lined fleece pullover — perfect for gifts or personal use.,Apparel,38.54
+P0611,Cozy Jacket,"Upgrade your routine with this cozy jacket, made from quality materials.",Apparel,17.43
+P0615,Ceramic Blender,Ceramic Blender designed for everyday use. Durable construction and reliable performance.,Home & Kitchen,193.45
+P0616,Warm Sweater,"A warm sweater built to last, loved by thousands of customers.",Apparel,139.08
+P0622,Portable Camp Stove,"A portable camp stove built to last, loved by thousands of customers.",Outdoor & Camping,85.13
+P0640,Lightweight Hiking Boots,Lightweight Hiking Boots designed for everyday use. Durable construction and reliable performance.,Footwear,83.48
+P0670,Weatherproof Headlamp,Our best-selling weatherproof headlamp — perfect for gifts or personal use.,Outdoor & Camping,110.51
