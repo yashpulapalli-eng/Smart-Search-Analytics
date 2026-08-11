@@ -1,0 +1,5 @@
+metric,control_rate_pct,treatment_rate_pct,absolute_diff_pct_pts,relative_lift_pct,z_statistic,p_value,significant_at_5pct,ci_95_low_pct_pts,ci_95_high_pct_pts,control_mean,treatment_mean,absolute_diff,t_statistic,ci_95_low,ci_95_high
+zero_result_rate,2.481,0.0,-2.481,-100.0,-8.352,0.0,True,-3.047,-1.915,,,,,,
+ctr,43.763,52.053,8.29,18.94,6.251,0.0,True,5.7,10.881,,,,,,
+search_to_purchase,12.198,16.463,4.264,34.96,4.59,0.0,True,2.442,6.086,,,,,,
+revenue_per_search,,,,3.18,,0.7056,False,,,18.58,19.171,0.59,0.378,-2.472,3.653
