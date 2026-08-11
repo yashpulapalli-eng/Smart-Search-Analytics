@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ShopSense — Search Experiment Instrument Panel</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --bg:#0B0C0A; --panel:#141513; --panel-2:#1B1D19; --grid-line:#22241F; --border:#2A2C26;
+    --text-primary:#E9E7DE; --text-secondary:#8B8D82; --text-tertiary:#55564E;
+    --control:#FFB020; --treatment:#4FD8E8; --led-on:#5CFF8A; --led-off:#FFC24A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);color:var(--text-primary);font-family:'Inter',sans-serif;
+    padding:36px 20px 70px;-webkit-font-smoothing:antialiased;
+    background-image:linear-gradient(var(--grid-line) 1px, transparent 1px),linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size:28px 28px;
+  }
+  .wrap{max-width:1040px;margin:0 auto;}
+  header{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:22px 26px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+  .plate-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--text-tertiary);text-transform:uppercase;margin-bottom:8px;}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;letter-spacing:.01em;text-transform:uppercase;}
+  .h1-sub{color:var(--text-secondary);font-size:13px;margin-top:6px;max-width:480px;}
+  .status-light{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;}
+  .led{width:10px;height:10px;border-radius:50%;background:var(--led-on);box-shadow:0 0 8px var(--led-on);}
+  .status-text{color:var(--led-on);font-weight:600;}
+  .channels{display:flex;gap:24px;margin-bottom:22px;padding:0 4px;}
+  .channel{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-secondary);}
+  .swatch{width:18px;height:3px;border-radius:2px;}
+  .swatch.control{background:var(--control);} .swatch.treatment{background:var(--treatment);}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:20px 22px;margin-bottom:18px;}
+  .panel-label{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px;display:flex;justify-content:space-between;align-items:baseline;}
+  .panel-label .unit{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-tertiary);text-transform:none;letter-spacing:0;}
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px;}
+  .kpi{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 16px 14px;}
+  .kpi-name{font-size:11px;color:var(--text-secondary);font-family:'JetBrains Mono',monospace;letter-spacing:.05em;margin-bottom:12px;text-transform:uppercase;}
+  .kpi-readout{display:flex;justify-content:space-between;align-items:baseline;font-family:'JetBrains Mono',monospace;margin-bottom:3px;}
+  .kpi-readout .ch{font-size:10px;color:var(--text-tertiary);}
+  .kpi-readout .v{font-size:19px;font-weight:600;}
+  .kpi-readout.control .v{color:var(--control);} .kpi-readout.treatment .v{color:var(--treatment);}
+  .kpi-delta{margin-top:10px;padding-top:9px;border-top:1px dashed var(--border);font-family:'JetBrains Mono',monospace;font-size:11px;display:flex;justify-content:space-between;color:var(--text-tertiary);}
+  .kpi-delta .v{font-weight:600;} .kpi-delta .v.up{color:var(--led-on);} .kpi-delta .v.flat{color:var(--led-off);}
+  .funnel-row{display:grid;grid-template-columns:130px 1fr 1fr;gap:14px;align-items:center;margin-bottom:14px;}
+  .funnel-row:last-child{margin-bottom:0;}
+  .funnel-label{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-secondary);}
+  .trace-track{background:var(--panel-2);border-radius:4px;height:22px;position:relative;overflow:hidden;border:1px solid var(--border);}
+  .trace-fill{height:100%;display:flex;align-items:center;padding-left:9px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:#0B0C0A;}
+  .trace-fill.control{background:var(--control);} .trace-fill.treatment{background:var(--treatment);}
+  .scope-row{display:grid;grid-template-columns:170px 1fr 76px 110px;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--border);}
+  .scope-row:last-child{border-bottom:none;}
+  .scope-name{font-size:13px;font-weight:500;}
+  .scope-sub{font-size:10px;color:var(--text-tertiary);font-family:'JetBrains Mono',monospace;margin-top:2px;text-transform:uppercase;letter-spacing:.04em;}
+  .scope-chart{position:relative;height:30px;background:var(--panel-2);border-radius:4px;border:1px solid var(--border);}
+  .scope-zero{position:absolute;top:2px;bottom:2px;left:50%;width:1px;background:var(--text-tertiary);}
+  .scope-ci{position:absolute;top:50%;height:5px;transform:translateY(-50%);border-radius:3px;}
+  .scope-ci.on{background:var(--led-on);opacity:.5;} .scope-ci.off{background:var(--led-off);opacity:.5;}
+  .scope-point{position:absolute;top:50%;width:8px;height:8px;border-radius:50%;transform:translate(-50%,-50%);border:2px solid var(--panel-2);}
+  .scope-point.on{background:var(--led-on);} .scope-point.off{background:var(--led-off);}
+  .scope-led{display:flex;align-items:center;gap:6px;justify-content:center;}
+  .scope-led .dot{width:8px;height:8px;border-radius:50%;}
+  .scope-led .dot.on{background:var(--led-on);box-shadow:0 0 6px var(--led-on);}
+  .scope-led .dot.off{background:var(--led-off);box-shadow:0 0 6px var(--led-off);}
+  .scope-p{text-align:right;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-tertiary);}
+  .scope-p .flag{display:block;font-size:11px;font-weight:600;margin-top:2px;}
+  .scope-p .flag.on{color:var(--led-on);} .scope-p .flag.off{color:var(--led-off);}
+  .dau-wrap{width:100%;overflow-x:auto;}
+  .guardrail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .guardrail{background:var(--panel-2);border:1px solid var(--border);border-radius:6px;padding:14px 16px;}
+  .g-title{font-size:11px;color:var(--text-secondary);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;}
+  .g-vals{display:flex;gap:22px;}
+  .g-item .n{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:600;}
+  .g-item .l{font-size:10px;color:var(--text-tertiary);margin-top:2px;font-family:'JetBrains Mono',monospace;}
+  footer{margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-tertiary);line-height:1.8;padding:16px 4px 0;border-top:1px solid var(--border);}
+  footer b{color:var(--text-secondary);}
+  @media (max-width:720px){
+    .kpi-grid{grid-template-columns:1fr 1fr;} .funnel-row{grid-template-columns:1fr;gap:6px;}
+    .scope-row{grid-template-columns:1fr;gap:8px;} .scope-p{text-align:left;} .scope-led{justify-content:flex-start;}
+    .guardrail-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="plate-label" id="plateLabel"></div>
+      <h1>AI Semantic Search — Signal Readout</h1>
+      <div class="h1-sub" id="h1Sub"></div>
+    </div>
+    <div class="status-light">
+      <span class="led"></span>
+      <span class="status-text" id="verdictText"></span>
+    </div>
+  </header>
+
+  <div class="channels">
+    <div class="channel"><span class="swatch control"></span>CH.A — Control (legacy search)</div>
+    <div class="channel"><span class="swatch treatment"></span>CH.B — Treatment (AI search)</div>
+  </div>
+
+  <div class="kpi-grid" id="kpiGrid"></div>
+
+  <div class="panel">
+    <div class="panel-label">Conversion Funnel <span class="unit">search → click → cart → purchase</span></div>
+    <div id="funnelPanel"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Signal vs. Noise Floor <span class="unit">95% CI on treatment effect · dashed line = zero effect</span></div>
+    <div id="scopePanel"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Daily Active Users <span class="unit" id="dauUnit"></span></div>
+    <div class="dau-wrap"><svg id="dauChart" width="980" height="180"></svg></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-label">Guardrail Readouts <span class="unit">is the win costing us elsewhere?</span></div>
+    <div class="guardrail-grid" id="guardrailGrid"></div>
+  </div>
+
+  <footer id="footerText"></footer>
+</div>
+
+<script id="dashboard-data" type="application/json">
+__DASHBOARD_DATA__
+</script>
+
+<script>
+  const data = JSON.parse(document.getElementById('dashboard-data').textContent);
+
+  document.getElementById('plateLabel').textContent =
+    `Instrument · ShopSense Search Experiment · ${data.meta.date_range} · generated ${data.meta.generated_at}`;
+  document.getElementById('h1Sub').textContent =
+    `${data.meta.users} users · ${data.meta.searches} searches · control (legacy keyword) vs. treatment (AI semantic retrieval)`;
+  document.getElementById('verdictText').textContent = data.verdict;
+
+  const kpiGrid = document.getElementById('kpiGrid');
+  data.kpis.forEach(k => {
+    const el = document.createElement('div');
+    el.className = 'kpi';
+    el.innerHTML = `
+      <div class="kpi-name">${k.name}</div>
+      <div class="kpi-readout control"><span class="ch">CH.A</span><span class="v">${k.control}</span></div>
+      <div class="kpi-readout treatment"><span class="ch">CH.B</span><span class="v">${k.treatment}</span></div>
+      <div class="kpi-delta"><span>Δ</span><span class="v ${k.deltaClass}">${k.delta}</span></div>
+    `;
+    kpiGrid.appendChild(el);
+  });
+
+  const funnelPanel = document.getElementById('funnelPanel');
+  data.funnel.forEach(f => {
+    const row = document.createElement('div');
+    row.className = 'funnel-row';
+    row.innerHTML = `
+      <div class="funnel-label">${f.label}</div>
+      <div class="trace-track"><div class="trace-fill control" style="width:${f.control}%">${f.control.toFixed(1)}%</div></div>
+      <div class="trace-track"><div class="trace-fill treatment" style="width:${f.treatment}%">${f.treatment.toFixed(1)}%</div></div>
+    `;
+    funnelPanel.appendChild(row);
+  });
+
+  const scopePanel = document.getElementById('scopePanel');
+  data.significance.forEach(m => {
+    const toPct = v => 50 + (v / m.scaleMax) * 50;
+    const loPct = Math.max(0, Math.min(100, toPct(m.lo)));
+    const hiPct = Math.max(0, Math.min(100, toPct(m.hi)));
+    const ptPct = Math.max(0, Math.min(100, toPct(m.diff)));
+    const cls = m.sig ? 'on' : 'off';
+    const row = document.createElement('div');
+    row.className = 'scope-row';
+    row.innerHTML = `
+      <div><div class="scope-name">${m.name}</div><div class="scope-sub">${m.sub}</div></div>
+      <div class="scope-chart">
+        <div class="scope-zero"></div>
+        <div class="scope-ci ${cls}" style="left:${loPct}%; width:${hiPct-loPct}%;"></div>
+        <div class="scope-point ${cls}" style="left:${ptPct}%;"></div>
+      </div>
+      <div class="scope-led"><span class="dot ${cls}"></span></div>
+      <div class="scope-p">p = ${m.p}<span class="flag ${cls}">${m.sig ? 'SIGNIFICANT' : 'NO SIGNAL'}</span></div>
+    `;
+    scopePanel.appendChild(row);
+  });
+
+  document.getElementById('dauUnit').textContent = `${data.dau.days.length}-day trace`;
+  const svg = document.getElementById('dauChart');
+  const W = 980, H = 180, padL = 28, padR = 8, padT = 10, padB = 20;
+  const dc = data.dau.control, dt = data.dau.treatment;
+  const maxVal = Math.max(...dc, ...dt) * 1.1;
+  const xPos = i => padL + (i / (dc.length - 1)) * (W - padL - padR);
+  const yPos = v => H - padB - (v / maxVal) * (H - padT - padB);
+  const pathFor = arr => arr.map((v,i) => `${i===0?'M':'L'} ${xPos(i).toFixed(1)} ${yPos(v).toFixed(1)}`).join(' ');
+  const ns = 'http://www.w3.org/2000/svg';
+  const grid = document.createElementNS(ns,'line');
+  grid.setAttribute('x1', padL); grid.setAttribute('x2', W - padR);
+  grid.setAttribute('y1', H - padB); grid.setAttribute('y2', H - padB);
+  grid.setAttribute('stroke', '#2A2C26'); grid.setAttribute('stroke-width', '1');
+  svg.appendChild(grid);
+  function addPath(d, color){
+    const p = document.createElementNS(ns, 'path');
+    p.setAttribute('d', d); p.setAttribute('fill', 'none');
+    p.setAttribute('stroke', color); p.setAttribute('stroke-width', '2');
+    svg.appendChild(p);
+  }
+  addPath(pathFor(dc), '#FFB020');
+  addPath(pathFor(dt), '#4FD8E8');
+  [[dc,'#FFB020'],[dt,'#4FD8E8']].forEach(([arr,color]) => {
+    arr.forEach((v,i) => {
+      const c = document.createElementNS(ns,'circle');
+      c.setAttribute('cx', xPos(i)); c.setAttribute('cy', yPos(v)); c.setAttribute('r', 2.5);
+      c.setAttribute('fill', color);
+      svg.appendChild(c);
+    });
+  });
+
+  const guardrailGrid = document.getElementById('guardrailGrid');
+  data.guardrails.forEach(g => {
+    const el = document.createElement('div');
+    el.className = 'guardrail';
+    el.innerHTML = `
+      <div class="g-title">${g.title}</div>
+      <div class="g-vals">
+        <div class="g-item"><div class="n" style="color:var(--control)">${g.control.n}</div><div class="l">${g.control.l}</div></div>
+        <div class="g-item"><div class="n" style="color:var(--treatment)">${g.treatment.n}</div><div class="l">${g.treatment.l}</div></div>
+      </div>
+    `;
+    guardrailGrid.appendChild(el);
+  });
+
+  document.getElementById('footerText').innerHTML =
+    `<b>METHOD</b> — ${data.footer.method}<br><b>CAVEAT</b> — ${data.footer.caveat}`;
+</script>
+</body>
+</html>

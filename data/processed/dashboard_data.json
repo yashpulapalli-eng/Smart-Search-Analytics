@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "users": 794,
+    "searches": 5678,
+    "date_range": "2026-06-01 to 2026-06-14",
+    "generated_at": "2026-08-10 22:36"
+  },
+  "verdict": "RECOMMEND SHIP",
+  "kpis": [
+    {
+      "name": "Zero-Result Rate",
+      "control": "2.48%",
+      "treatment": "0.00%",
+      "delta": "-2.5pp",
+      "deltaClass": "up"
+    },
+    {
+      "name": "Click-Through Rate",
+      "control": "43.76%",
+      "treatment": "52.05%",
+      "delta": "+8.3pp",
+      "deltaClass": "up"
+    },
+    {
+      "name": "Search \u2192 Purchase",
+      "control": "12.20%",
+      "treatment": "16.46%",
+      "delta": "+4.3pp",
+      "deltaClass": "up"
+    },
+    {
+      "name": "Revenue / Search",
+      "control": "$18.58",
+      "treatment": "$19.17",
+      "delta": "+0.59 (n.s.)",
+      "deltaClass": "flat"
+    }
+  ],
+  "funnel": [
+    {
+      "label": "Click Rate",
+      "control": 43.76,
+      "treatment": 52.05
+    },
+    {
+      "label": "Cart Add Rate",
+      "control": 48.35,
+      "treatment": 52.53
+    },
+    {
+      "label": "Purchase Rate",
+      "control": 57.65,
+      "treatment": 60.21
+    }
+  ],
+  "significance": [
+    {
+      "name": "Zero-Result Rate",
+      "sub": "lower is better \u00b7 pct pts",
+      "diff": -2.4810475534114405,
+      "lo": -3.04698629552982,
+      "hi": -1.9151088112930605,
+      "p": "<0.001",
+      "sig": true,
+      "scaleMax": 4
+    },
+    {
+      "name": "Click-Through Rate",
+      "sub": "higher is better \u00b7 pct pts",
+      "diff": 8.290391998363445,
+      "lo": 5.699684561816166,
+      "hi": 10.881099434910723,
+      "p": "<0.001",
+      "sig": true,
+      "scaleMax": 15.233539208875012
+    },
+    {
+      "name": "Search \u2192 Purchase",
+      "sub": "higher is better \u00b7 pct pts",
+      "diff": 4.26405221878184,
+      "lo": 2.441700776534533,
+      "hi": 6.086403661029147,
+      "p": "<0.001",
+      "sig": true,
+      "scaleMax": 8.520965125440805
+    },
+    {
+      "name": "Revenue / Search",
+      "sub": "higher is better \u00b7 dollars",
+      "diff": 0.5902562180112305,
+      "lo": -2.472011735628177,
+      "hi": 3.6525241716506383,
+      "p": "0.706",
+      "sig": false,
+      "scaleMax": 5.113533840310893
+    }
+  ],
+  "dau": {
+    "days": [
+      "2026-06-01",
+      "2026-06-02",
+      "2026-06-03",
+      "2026-06-04",
+      "2026-06-05",
+      "2026-06-06",
+      "2026-06-07",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-10",
+      "2026-06-11",
+      "2026-06-12",
+      "2026-06-13",
+      "2026-06-14"
+    ],
+    "control": [
+      121,
+      112,
+      124,
+      122,
+      137,
+      128,
+      120,
+      132,
+      123,
+      121,
+      147,
+      128,
+      116,
+      121
+    ],
+    "treatment": [
+      124,
+      122,
+      115,
+      114,
+      112,
+      114,
+      101,
+      125,
+      109,
+      109,
+      115,
+      136,
+      117,
+      110
+    ]
+  },
+  "guardrails": [
+    {
+      "title": "Search Latency (avg)",
+      "control": {
+        "n": "90ms",
+        "l": "CH.A control"
+      },
+      "treatment": {
+        "n": "179ms",
+        "l": "CH.B treatment (+89ms)"
+      }
+    },
+    {
+      "title": "7-Day Retention",
+      "control": {
+        "n": "90.9%",
+        "l": "CH.A control"
+      },
+      "treatment": {
+        "n": "90.2%",
+        "l": "CH.B treatment (-0.8pp)"
+      }
+    }
+  ],
+  "footer": {
+    "method": "794 users randomly split 50/50, control (legacy keyword search) vs. treatment (AI semantic search via FAISS + sentence-transformers). 14-day simulation, 5678 total searches. Two-proportion z-test for rate metrics, Welch's t-test for revenue. \u03b1 = 0.05.",
+    "caveat": "Revenue-per-search lift is directionally positive but not statistically significant (p = 0.706) at current sample size. Ship recommendation rests on zero-result rate, CTR, and conversion."
+  }
+}
