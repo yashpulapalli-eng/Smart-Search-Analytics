@@ -81,4 +81,6 @@ Once that's done, just open `dashboard/index.html` in a browser — nothing else
 
 ## Why I Built This
 
-This started as a way to demonstrate product analytics and experimentation skills — problem framing, metric design, proper A/B testing, and applied retrieval/AI work — relevant to product management, data analysis, and AI engineering roles alike. `PROGRESS.md` has the unfiltered build log, including real bugs that came up along the way (a data-integrity issue with duplicate IDs, a couple of path-resolution mistakes, an encoding bug) — working through those is as much a part of the story as the final numbers.
+The goal here was to bring together three skills that rarely show up in the same place: a genuinely working AI retrieval pipeline rather than a mocked one, statistical analysis rigorous enough to survive a real experimentation review, and a product recommendation that someone could actually act on. Plenty of tutorials cover each of these separately — what I wanted was to build all three into a single project, using one dataset throughout.
+
+`PROGRESS.md` has the unfiltered build log, including real bugs that came up along the way (a data-integrity issue with duplicate IDs, a couple of path-resolution mistakes, an encoding bug) — working through those is as much a part of the story as the final numbers.
